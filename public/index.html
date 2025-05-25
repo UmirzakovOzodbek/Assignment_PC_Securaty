@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ozodbek - PC Repair Experts</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>DERN-SUPPORT</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Service</a></li>
+                <li><a href="#contact" class="contact-btn">Contact</a></li>
+                <li id="authSection">
+                    <a href="#" id="authBtn" class="auth-btn">Sign In</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Ishonchli <br><span class="highlight">Noutbuk Ta’mirlash<br>Mutaxassislari</span></h1>
+            <p>Dern-Support barcha yetakchi noutbuk brendlari uchun ekran ta’miri, batareya almashtirish va tizim yangilash xizmatlarini taklif etadi. Bizning malakali texniklarimiz qurilmangizning ishlashini yuqori darajada saqlash uchun tezkor, ishonchli va arzon yechimlarni taqdim etadi. Bizga ishoning – sizni bog‘lab turamiz!</p>
+            <button class="cta-btn" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">Bog‘lanamiz</button>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Xizmatlarimiz bilan tanishing</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">💻</div>
+                    <h3>Noutbuk Savdosi</h3>
+                    <p>Shaxsiy va ishbilarmon ehtiyojlaringizga mos keng turdagi noutbuklarni taklif etuvchi rasmiy diler. Eng so‘nggi modellar va raqobatbardosh narxlar bilan tanishing.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🔧</div>
+                    <h3>Noutbuk Xizmati</h3>
+                    <p>Barcha yetakchi brendlar uchun jihozlaringizni samarali ishlashi uchun apparat va dasturiy ta’mir xizmatlari.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🗄️</div>
+                    <h3>Server Xizmati</h3>
+                    <p>Biznesingizga mos yuqori samaradorlikka ega server yechimlari. Moslashuvchan, xavfsiz va ishonchli xizmatlar.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🖨️</div>
+                    <h3>Kompyuterlar, CCTV, Printerlar va boshqa qurilmalar</h3>
+                    <p>Kompyuter, CCTV tizimlari, printerlar va boshqa ofis jihozlari uchun keng turdagi mahsulotlar. Uy va ishbilarmonlar uchun ishonchli yechimlar.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🌐</div>
+                    <h3>Tarmoqlar</h3>
+                    <p>Uyingiz va ofisingiz uchun yo‘riqnoma, switch va xavfsizlik devorlaridan iborat eng zamonaviy tarmoq mahsulotlari.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🎧</div>
+                    <h3>Aksessuarlar Savdosi va Xizmati</h3>
+                    <p>Telefon qutilari, klaviaturalar, naushniklar va boshqa qurilmalaringiz uchun yuqori sifatli aksessuarlar.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-logo">
+                    <h1>Dern-Support</h1>
+                </div>
+                <div class="about-text">
+                    <h2>Biz haqimizda</h2>
+                    <p>Dern-Support kompaniyasi sizning noutbuklaringizni doimiy ishlashini ta’minlash uchun ishonchli va professional xizmatlar ko‘rsatadi. Har qanday apparat yoki dasturiy muammolarni hal qilishda katta tajribaga ega texnik jamoamiz bilan xizmatdaman.</p>
+                    <p>Bizning vazifamiz – tezkor, ishonchli va arzon yechimlarni taqdim etish orqali eng yuqori sifatni saqlab qolishdir. Ekran almashtirish, batareya yangilash, tizim nosozliklarini bartaraf qilish kabi xizmatlarimiz bor.</p>
+                    <p>Dern-Support sizga doimiy yechim taqdim etadi. Talaba, ishchi yoki tadbirkor bo‘lishingizdan qat’i nazar, biz sizning noutbuklaringizni mukammal holatda saqlashga tayyormiz.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-form-section">
+                    <h2>Bog‘lanish</h2>
+                    <p>Maxsus so‘rovlaringiz bormi yoki yangi imkoniyatlarni o‘rganmoqchimisiz? Bizning tajribali jamoamiz siz bilan muloqot qilishga tayyor.</p>
+
+                    <form id="contactForm" class="contact-form">
+                        <input type="text" name="fullName" placeholder="To‘liq ism" required>
+                        <input type="text" name="street" placeholder="Ko‘cha nomi" required>
+                        <div class="form-row">
+                            <input type="text" name="city" placeholder="Shahar" required>
+                            <input type="text" name="postcode" placeholder="Pochta indeksi" required>
+                        </div>
+                        <input type="tel" name="phoneNo" placeholder="Telefon raqami" required>
+                        <input type="email" name="email" placeholder="Elektron pochta" required>
+                        <textarea name="message" placeholder="Xabaringizni yozing" rows="4" required></textarea>
+                        <button type="submit" class="submit-btn" id="submitBtn">
+                            📧 Xabar yuborish
+                        </button>
+                    </form>
+
+                    <div class="contact-info">
+                        <p>📧 ozodbek@gmail.com</p>
+                        <p>📞 +998 (77) 777-77-77</p>
+                    </div>
+                </div>
+                <div class="map-section">
+                    <div class="map-placeholder">
+                        <p style="font-size: 1.5rem; font-weight: bold; margin-bottom: 1rem;">🗺️ Dern-Support joylashuvi</p>
+                        <p>📍 Chilonzor 10-dahasi, Toshkent shahri, O‘zbekiston</p>
+
+                        <div style="margin-top: 1rem;">
+                            <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2995.7971406016345!2d69.21743731542077!3d41.285449408109385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b6dfe0a60fd%3A0x7f0c7dd9cbb7f733!2sChilonzor%2010-dahasi%2C%20Tashkent%2C%20Uzbekistan!5e0!3m2!1sen!2s!4v1716641453210!5m2!1sen!2s"
+                                    width="100%"
+                                    height="300"
+                                    style="border:0; border-radius: 12px;"
+                                    allowfullscreen=""
+                                    loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+
+                        <p style="margin-top: 1rem;">Biz sizga yordam berish uchun shu yerdamiz. Marhamat, tashrif buyuring!</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <div id="authModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="authContainer">
+                <div id="signInForm" class="auth-form">
+                    <h2>Sign In</h2>
+                    <form id="loginForm">
+                        <input type="email" name="email" placeholder="Elektron pochta" required>
+                        <input type="password" name="password" placeholder="Parol" required>
+                        <button type="submit" id="loginBtn">Kirish</button>
+                    </form>
+                    <p>Hisobingiz yo‘qmi? <a href="#" id="showSignUp">Ro‘yxatdan o‘tish</a></p>
+                    <p style="font-size: 0.8rem; color: #666; margin-top: 1rem;">
+                        Test: test@example.com / 123456<br>
+                        Admin: admin@f2computers.com / admin123
+                    </p>
+                </div>
+
+                <div id="signUpForm" class="auth-form" style="display: none;">
+                    <h2>Sign Up</h2>
+                    <form id="registerForm">
+                        <input type="text" name="fullName" placeholder="To‘liq ism" required>
+                        <input type="email" name="email" placeholder="Elektron pochta" required>
+                        <input type="password" name="password" placeholder="Parol" required>
+                        <button type="submit" id="registerBtn">Ro‘yxatdan o‘tish</button>
+                    </form>
+                    <p>Allaqachon hisobingiz bormi? <a href="#" id="showSignIn">Tizimga kirish</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ozodbek - Admin Panel</title>
+    <script src="admin-script.js" defer></script>
+    <link rel="stylesheet" href="admin-style.css">
+</head>
+<body>
+    <div class="admin-container">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2>Dern-Support Admin</h2>
+            </div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="#dashboard" class="nav-link active" data-section="dashboard">📊 Dashboard</a></li>
+                    <li><a href="#messages" class="nav-link" data-section="messages">📧 Messages</a></li>
+                    <li><a href="#users" class="nav-link" data-section="users">👥 Users</a></li>
+                    <li><a href="/" class="nav-link">🏠 Back to Website</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <header class="main-header">
+                <h1 id="pageTitle">Dashboard</h1>
+                <div class="header-actions">
+                    <button id="refreshBtn" class="btn btn-primary">🔄 Refresh</button>
+                </div>
+            </header>
+
+            <section id="dashboard" class="content-section active">
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon">📧</div>
+                        <div class="stat-info">
+                            <h3 id="totalMessages">0</h3>
+                            <p>Total Messages</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">📩</div>
+                        <div class="stat-info">
+                            <h3 id="newMessages">0</h3>
+                            <p>New Messages</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">👥</div>
+                        <div class="stat-info">
+                            <h3 id="totalUsers">0</h3>
+                            <p>Total Users</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">🌐</div>
+                        <div class="stat-info">
+                            <h3 id="onlineUsers">0</h3>
+                            <p>Online Users</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-header">
+                    <h2>Recent Messages</h2>
+                    <span id="lastUpdated">Last updated: Never</span>
+                </div>
+                <div id="recentMessages" class="messages-container">
+                    <div class="loading">Loading recent messages...</div>
+                </div>
+            </section>
+
+            <section id="messages" class="content-section">
+                <div class="section-header">
+                    <h2>All Contact Messages</h2>
+                    <select id="statusFilter">
+                        <option value="all">All Messages</option>
+                        <option value="new">New</option>
+                        <option value="read">Read</option>
+                        <option value="replied">Replied</option>
+                    </select>
+                </div>
+                <div id="messagesContainer" class="messages-container">
+                    <div class="loading">Loading messages...</div>
+                </div>
+            </section>
+
+            <section id="users" class="content-section">
+                <div class="section-header">
+                    <h2>Registered Users</h2>
+                    <span id="userCount">0 users</span>
+                </div>
+                <div id="usersContainer" class="users-container">
+                    <div class="loading">Loading users...</div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
